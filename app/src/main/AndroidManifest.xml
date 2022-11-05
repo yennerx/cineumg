@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yhx.cinetva">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cinetva">
+        <activity android:name=".activities.ModificarsalaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.AgregarsalaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.ModificarfuncionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.AgregarfuncionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.ModificarpeliActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.AgregarpeliActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.SalaActivity"
+            android:parentActivityName=".activities.PeliculaActivity" />
+        <activity
+            android:name=".activities.PeliculaActivity"
+            android:parentActivityName=".activities.CarteleraActivity" />
+        <activity
+            android:name=".activities.CarteleraActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

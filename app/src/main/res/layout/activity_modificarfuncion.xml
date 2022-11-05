@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.AgregarpeliActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clDataPeli">
+        <include
+            layout="@layout/app_bar_secondary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/clAppBar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etFuncionNo2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Numero de Función (ID)"/>
+
+            <EditText
+                android:id="@+id/etFuncionHora2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionNo2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Hora de la Función"/>
+
+            <EditText
+                android:id="@+id/etFuncionFecha2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionHora2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Fecha de la Función"/>
+
+            <EditText
+                android:id="@+id/etFuncionIdPeli2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionFecha2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="ID de la Película a Proyectar"/>
+
+            <EditText
+                android:id="@+id/etFuncionNoSala2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionIdPeli2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="No. de Sala Donde Proyectar"/>
+
+            <Button
+                android:id="@+id/btFuncionBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionNoSala2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btFuncionModificar"/>
+
+            <Button
+                android:id="@+id/btFuncionModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionNoSala2"
+                app:layout_constraintStart_toEndOf="@id/btFuncionBuscar"
+                app:layout_constraintEnd_toStartOf="@id/btFuncionEliminar"/>
+
+            <Button
+                android:id="@+id/btFuncionEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                app:layout_constraintTop_toBottomOf="@id/etFuncionNoSala2"
+                app:layout_constraintStart_toEndOf="@id/btFuncionModificar"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

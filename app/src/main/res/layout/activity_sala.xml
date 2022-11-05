@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SalaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clInfoSala">
+        <include
+            layout="@layout/app_bar_secondary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clInfoSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/clAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvNoSala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sala: 1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tvNoSala"
+            tools:text="Categoría: VIP"/>
+
+        <TextView
+            android:id="@+id/tvCapacidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Capacidad: 20"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoria"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvOcupados"/>
+
+        <TextView
+            android:id="@+id/tvOcupados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Ocupados: 12"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoria"
+            app:layout_constraintStart_toEndOf="@id/tvCapacidad"
+            app:layout_constraintEnd_toStartOf="@id/tvDisponibles"/>
+
+        <TextView
+            android:id="@+id/tvDisponibles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Disponibles: 8"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoria"
+            app:layout_constraintStart_toEndOf="@id/tvOcupados"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvDisponibles"
+            android:text="@string/tvPantalla"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAsientos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="30dp"
+        app:layout_constraintTop_toBottomOf="@id/clInfoSala"
+        app:layout_constraintBottom_toTopOf="@id/clControles">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSala"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clControles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/clAsientos"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+        <Button
+            android:id="@+id/btFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btFinalizar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Finalizar"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

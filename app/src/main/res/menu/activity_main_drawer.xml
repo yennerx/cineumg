@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="@string/titulo1">
+            <menu>
+                <item android:id="@+id/nav_item_one"
+                    android:icon="@drawable/ic_baseline_local_movies_24"
+                    android:title="@string/item1"/>
+
+                <item android:id="@+id/nav_item_two"
+                    android:icon="@drawable/ic_baseline_add_24"
+                    android:title="@string/item2"/>
+
+                <item android:id="@+id/nav_item_three"
+                    android:icon="@drawable/ic_baseline_edit_24"
+                    android:title="@string/item3"/>
+            </menu>
+        </item>
+
+    <item android:title="@string/titulo2">
+        <menu>
+            <item android:id="@+id/nav_item_four"
+                android:icon="@drawable/ic_baseline_add_24"
+                android:title="@string/item4"/>
+            <item android:id="@+id/nav_item_five"
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="@string/item5"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/titulo3">
+        <menu>
+            <item android:id="@+id/nav_item_six"
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="@string/item6"/>
+            <item android:id="@+id/nav_item_seven"
+                android:icon="@drawable/ic_baseline_edit_24"
+                android:title="@string/item7"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_item_eight"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="@string/item0"/>
+</menu>

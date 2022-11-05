@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CineUMG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!--Botones Sala-->
+    <string name="btFinalizar">Finalizar</string>
+    <string name="btregresar">Regresar</string>
+    <string name="tvPantalla">Pantalla</string>
+
+    <!--Menú principal-->
+
+    <string name="item1">Ir a Cartelera</string>
+    <string name="item2">Agregar Película</string>
+    <string name="item3">Modificar Película</string>
+    <string name="item4">Agregar función</string>
+    <string name="item5">Modificar función</string>
+    <string name="item6">Agregar Sala</string>
+    <string name="item7">Modificar Sala</string>
+    <string name="item0">Salir</string>
+    <string name="titulo1">Cartelera</string>
+    <string name="titulo2">Funciones</string>
+    <string name="titulo3">Salas</string>
+    <string name="tvEstreno">Estreno de Hoy!!!</string>
+    <string name="btCartelera">Ir a Cartelera</string>
+    <string name="title_activity_agregarpeli">AgregarpeliActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

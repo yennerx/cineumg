@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="clasificacion_peli">
+        <item>A</item>
+        <item>B</item>
+        <item>B-12</item>
+        <item>B-15</item>
+        <item>C</item>
+    </string-array>
+</resources>
